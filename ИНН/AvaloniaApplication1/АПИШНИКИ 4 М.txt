@@ -1,0 +1,24 @@
+http://10.30.12.163:4444/TransferSimulator/fullName
+
+http://prb.sylas.ru/TransferSimulator/fullName
+
+
+ValidationResultTBlock.Text = !validationResult ? "Содержит" : "Не содержит" 
+
+"Успешно" : "Не успешно"
+
+Для ИНН: var pattern = @"^\d{10}(\d{2})?$"; /inn
+Для Карты: var pattern = @"^\d{2} \d{2} \d{6}$"; /identityCard
+Для Почты: var pattern = @"^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$"; /email
+Для Снилса: var pattern = @"^\d{3}-\d{3}-\d{3} \d{2}$"; /snils
+Для телефона: var pattern = @"^\+7 \d{3} \d{3}-\d{2}-\d{2}$"; /mobilePhone
+Для ФИО: var pattern = @"[^А-Яа-яЁё\s]"; /fullName 
+также будет здесь ТОЛЬКО У ФИО ValidationResultTBlock.Text = !validationResult ? "НЕ содержит" : "Содержит" 
+И
+"Не успешно" : "Успешно"
+
+
+Чтобы закинуть докс, нужно нажать на проект он такой фиолетовый в самом вверху
+ПКМ далее Open In > Explorer
+И закидываем докс в папку с названием проекта
+Чтоб закинуть в корень проект анеобходимо закинуть докс в папку bin и до конца 
